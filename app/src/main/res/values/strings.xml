@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">FindGhost</string>
-
+    <string name="hello">Hello World, NMapViewer!</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_naver">NaverActivity</string>
+    <string name="str_done">완료</string>
 </resources>

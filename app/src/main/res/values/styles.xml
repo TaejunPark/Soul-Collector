@@ -5,4 +5,7 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.NoShadow" parent="android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
 </resources>
