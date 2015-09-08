@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+
+    >
+
+    <LinearLayout
+        android:background="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/half_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+            <ImageView
+                android:id="@+id/half_left_ghost"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/picture_side_half"
+                android:layout_height="@dimen/picture_side_half"
+                android:src="@drawable/soul_keep_girl1"/>
+            <ImageView
+                android:id="@+id/half_left_prison"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/picture_side_half"
+                android:layout_height="@dimen/picture_side_half"
+                android:src="@drawable/soul_keep_bar070"/>
+        </FrameLayout>
+        <ProgressBar
+            android:id="@+id/half_left_health"
+            android:progressTint="@android:color/holo_red_dark"
+            android:max="10"
+            android:progress="10"
+            android:padding="5dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/picture_side_half"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/half_left_text"
+            android:layout_gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="처녀귀신"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        />
+
+
+    <LinearLayout
+        android:background="@android:color/darker_gray"
+        android:padding="5dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/half_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/half_right_ghost"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/picture_side_half"
+                android:layout_height="@dimen/picture_side_half"
+                android:src="@drawable/soul_keep_girl1"/>
+            <ImageView
+                android:id="@+id/half_right_prison"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/picture_side_half"
+                android:layout_height="@dimen/picture_side_half"
+                android:src="@drawable/soul_keep_bar070"/>
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/half_right_health"
+            android:progressTint="@android:color/holo_red_dark"
+            android:max="10"
+            android:progress="10"
+            android:padding="5dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/picture_side_half"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/half_right_text"
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="처녀귀신"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:id="@+id/mainLayout">
-<com.nhn.android.maps.NMapView 
-    android:layout_width="fill_parent" 
-    android:layout_height="fill_parent" 
-    android:text="@string/hello"
-    android:id="@+id/mapView"/>
-</LinearLayout>
+    android:orientation="vertical">
+
+    <com.nhn.android.maps.NMapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/visionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VISION START"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="visionStart"
+        />
+
+</RelativeLayout>

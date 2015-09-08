@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.0.0"
 
     defaultConfig {
-        applicationId "nive.findghost"
+        applicationId "nive.soulcollector"
         minSdkVersion 17
         targetSdkVersion 22
         versionCode 1

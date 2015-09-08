@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+
+    >
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--
+        <ImageButton
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/prev_bt"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+-->
+        <TextView
+            android:id="@+id/status_name"
+            android:textColor="@android:color/white"
+            android:text="처녀귀신"
+            android:textSize="30dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout
+
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:padding="8dp"
+            android:id="@+id/status_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:orientation="vertical"
+             >
+
+             <FrameLayout
+                 android:orientation="vertical"
+                 android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/status_ghost"
+                    android:layout_width="@dimen/picture_side_one"
+                    android:layout_height="@dimen/picture_side_one"
+                    android:src="@drawable/soul_keep_girl1"/>
+                <ImageView
+                    android:id="@+id/status_prison"
+                    android:layout_width="@dimen/picture_side_one"
+                    android:layout_height="@dimen/picture_side_one"
+                    android:src="@drawable/soul_keep_bar070"/>
+             </FrameLayout>
+
+            <ProgressBar
+                android:paddingTop="10dp"
+                android:id="@+id/status_health"
+                android:progressTint="@android:color/holo_red_dark"
+                android:max="10"
+                android:progress="6"
+
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false" />
+
+            <TextView
+                android:id="@+id/status_speech"
+                android:padding="4dp"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="패배 대사 삽입 예정"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                 android:layout_gravity="bottom">
+                <Button
+                    android:onClick="onSC"
+                    android:layout_alignParentBottom="true"
+                    android:text="승천하기"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+             </RelativeLayout>
+         </LinearLayout>
+     </FrameLayout>
+ </LinearLayout>

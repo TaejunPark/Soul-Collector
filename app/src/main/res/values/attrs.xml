@@ -6,6 +6,11 @@
 	</declare-styleable>
 	
 	<declare-styleable name="NNMapView_Layout">
-	</declare-styleable>	
+	</declare-styleable>
+
+	<declare-styleable name="ButtonBarContainerTheme">
+		<attr name="metaButtonBarStyle" format="reference" />
+		<attr name="metaButtonBarButtonStyle" format="reference" />
+	</declare-styleable>
 </resources>
 
