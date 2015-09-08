@@ -47,7 +47,8 @@
             android:name="nive.soulcollector.Part1.Vision.CameraActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/title_activity_camera"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
 
         <activity
             android:name="nive.soulcollector.Part1.Rader.NMapViewer"

@@ -78,16 +78,6 @@ public class CameraActivity extends Activity implements CvCameraViewListener2 {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        Log.i(TAG, "called onCreateOptionsMenu");
-        mItemPreviewRGBA = menu.add("Preview RGBA");
-        mItemPreviewGray = menu.add("Preview GRAY");
-        mItemPreviewCanny = menu.add("Canny");
-        mItemPreviewFeatures = menu.add("Find features");
-        return true;
-    }
-
-    @Override
     public void onPause() {
         super.onPause();
         if (mOpenCvCameraView != null)
@@ -140,6 +130,15 @@ public class CameraActivity extends Activity implements CvCameraViewListener2 {
         return mRgba;
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        Log.i(TAG, "called onCreateOptionsMenu");
+        mItemPreviewRGBA = menu.add("Preview RGBA");
+        mItemPreviewGray = menu.add("Preview GRAY");
+        mItemPreviewCanny = menu.add("Canny");
+        return true;
+    }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         Log.i(TAG, "called onOptionsItemSelected; selected item: " + item);
 
@@ -149,8 +148,6 @@ public class CameraActivity extends Activity implements CvCameraViewListener2 {
             mViewMode = VIEW_MODE_GRAY;
         } else if (item == mItemPreviewCanny) {
             mViewMode = VIEW_MODE_CANNY;
-        } else if (item == mItemPreviewFeatures) {
-            mViewMode = VIEW_MODE_FEATURES;
         }
 
         return true;
